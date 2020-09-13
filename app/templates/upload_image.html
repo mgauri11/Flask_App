@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+
+      <h1>Upload an image</h1>
+      <hr>
+
+      <form action="/upload-image" method="POST" enctype="multipart/form-data">
+
+        <div class="form-group">
+          <label>Select image</label>
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" name="image" id="image">
+            <label class="custom-file-label" for="image"></label>
+            <label>Set-Image-Time</label>
+            <input name="text">
+            <label class="custom-file-label" for="Image_Timer"></label>
+            
+            
+          </div>
+
+          
+        </div>
+        <button type="submit" class="btn btn-primary">Upload</button>
+      </form>
+
+      
+    </div>
+
+  </div>
+   
+</div>
+
+<div>
+  <h2>Video-Testing..</h2>
+  <p><a href="{{ url_for('index') }}">Visit our Video-Testing Page..</a></p>
+</div>
+
+
+{% endblock %}
