@@ -9,3 +9,7 @@ I am planning on adding few more features to exisiting application for e.g I am 
 
 I will be updating the project functionalities in coming weeks. Moreover, I will change the layout for the application.
 
+#Steps to run the application:
+
+1)In the app folder run the command- python routes.py which should run the application on port 5000 (http://localhost:5000).
+
